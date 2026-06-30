@@ -12,11 +12,12 @@ public:
                 ans[negIndex] = nums[i];
                 negIndex += 2;
             }
-            else{ans[posIndex] = nums[i];
+            else{
+                ans[posIndex] = nums[i];
                 posIndex += 2;
             }
         }
-        
+
         return ans;
     }
 };
