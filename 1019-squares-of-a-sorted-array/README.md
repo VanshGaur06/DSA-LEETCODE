@@ -28,3 +28,4 @@ k
 
 <p>&nbsp;</p>
 <strong>Follow up:</strong> Squaring each element and sorting the new array is very trivial, could you find an <code>O(n)</code> solution using a different approach?
+kk
