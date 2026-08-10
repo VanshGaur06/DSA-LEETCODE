@@ -19,7 +19,7 @@ After sorting, it becomes [0,1,9,16,100].
 
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
-k
+
 <ul>
 	<li><code><span>1 &lt;= nums.length &lt;= </span>10<sup>4</sup></code></li>
 	<li><code>-10<sup>4</sup> &lt;= nums[i] &lt;= 10<sup>4</sup></code></li>
