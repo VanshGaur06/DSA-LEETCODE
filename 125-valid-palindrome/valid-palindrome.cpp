@@ -16,12 +16,12 @@ public:
 
         while(start<end){
 
-            if(!isAlphaNum(s[start])){
+            if(!isalnum(s[start])){
                 start++ ;
                 continue;
             }
 
-            if(!isAlphaNum(s[end])){
+            if(!isalnum(s[end])){
                 end--;
                 continue;
             }
