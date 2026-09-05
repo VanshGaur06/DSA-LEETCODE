@@ -4,19 +4,22 @@ public:
         int n = nums.size();
 
         vector<int> suffixmin(n);
+        vector<int> prefixmax(n);
 
         suffixmin[n-1] = nums[n-1];
+        prefixmax[0] = nums[0];
 
         for(int i = n-2 ; i>=0 ; i--){
             suffixmin[i] = min(nums[i] , suffixmin[i+1]);
         }
-        
-            int maxi = INT_MIN;
+
+        for(int i = 1 ; i<n ; i++){
+            prefixmax[i] = max(nums[i] , prefixmax[i-1]);
+        }
 
         for(int i = 0 ; i<n ; i++){
-            maxi = max(maxi , nums[i]);
-                
-            int instability_score = maxi - suffixmin[i];
+                          
+            int instability_score = prefixmax[i] - suffixmin[i];
 
             if(instability_score <= k){
                 return i;
