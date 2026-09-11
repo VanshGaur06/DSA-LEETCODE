@@ -15,10 +15,6 @@ public:
             }
         }
 
-        if(singlesum > doublesum || doublesum > singlesum){
-            return true;
-        }
-
-        return false;
+        return singlesum > doublesum || doublesum > singlesum ;
     }
 };
